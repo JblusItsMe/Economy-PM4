@@ -40,7 +40,7 @@ class SoldeAPI {
       
       $config->set($solde + $amount);
       $config->save();
-      return "Ajout de §e$amount §rpour l'utitlisateur §E$name";
+      return "Ajout de §e$amount §rpour l'utitlisateur §e$name";
     } else {
       return "L'utilisateur n'existe pas sur le serveur";
     }
