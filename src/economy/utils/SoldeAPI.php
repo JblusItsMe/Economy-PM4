@@ -33,7 +33,7 @@ class SoldeAPI {
     return $config->get($sender->getName());
   }
 
-  public function addSolde(int $amount, string $name): string {
+  public function addSolde(int $amount, string $name) {
     $config = $this->getConfig();
     if($config->exists($name)) {
       $solde = $config->get($name);
@@ -46,7 +46,7 @@ class SoldeAPI {
     }
   }
 
-  public function removeSolde(int $amount, string $name): string {
+  public function removeSolde(int $amount, string $name) {
     $config = $this->getConfig();
     if($config->exists($name)) {
       $solde = $config->get($name);
